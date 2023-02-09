@@ -4,7 +4,7 @@
 
 This project involves a search engine on the uic.edu domain that returns a set of relevant urls for a given search query. The search engine first crawls through a lot of webpages and indexes them. After the web crawling process ends, the heaps and heaps of unstructured data obtained are cleaned and structured to the best possible extent, after which the intelligent part of the IR system takes over. This module processes all the structured data and retrieves the ones that are most similar to the search query.
 
-## Web Crawler
+### Web Crawler
 
 The web crawler as the name implies crawls 4000 pages on the web in the uic.edu domain and indexes 3807 pages. About 193 pages were not indexed due to some reasons like: could not establish a connection with the server, host failed to respond after multiple retries, the webpage contained less than 10 words. It took 1 hour and 36 minutes to crawl 4000 pages.
 
