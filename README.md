@@ -4,6 +4,14 @@
 
 This project involves a search engine on the uic.edu domain that returns a set of relevant urls for a given search query. The search engine first crawls through a lot of webpages and indexes them. After the web crawling process ends, the heaps and heaps of unstructured data obtained are cleaned and structured to the best possible extent, after which the intelligent part of the IR system takes over. This module processes all the structured data and retrieves the ones that are most similar to the search query.
 
+### How to Run
+
+The code in the Jupyter notebook has comments that should tell any reader what each part of the code does. For detailed documentation, please refer to the project report PDF file.
+
+Please note that the crawler takes a long time to run. To give you an estimate, it took 1 hour and 36 minutes to crawl 4000 pages. The crawled data already exists in the CrawledPages directory (for 4000 pages). So 'Part 1 - Web Crawler' cell need not be run for the project to work. Running the cell below might even destroy the existing file that has the crawled pages results. So please make a copy of that file before running the crawler again.
+
+Just running the 'Part 2 - Cosine Similarity' cell would suffice. This is where I read in all the stored crawled pages data and calculate cosine similarity. Please ensure that there is a folder called CrawledPages in the same directory with a file inside it called 4000_crawled_pages.json, if not please run Part 1.
+
 ### Web Crawler
 
 The web crawler as the name implies crawls 4000 pages on the web in the uic.edu domain and indexes 3807 pages. About 193 pages were not indexed due to some reasons like: could not establish a connection with the server, host failed to respond after multiple retries, the webpage contained less than 10 words. It took 1 hour and 36 minutes to crawl 4000 pages.
